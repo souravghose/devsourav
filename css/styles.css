@@ -1,0 +1,156 @@
+/* google fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+
+/* primary css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffb400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+p {
+    color: rgb(231, 231, 231);
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+.custom-rounded-5 {
+    border-radius: 2em;
+}
+
+.custom-text-yellow {
+    color: #ffb400;
+}
+
+.custom-font-size-20 {
+    font-size: 20px;
+}
+
+.custom-font-size-50 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* banner section */
+
+#banner {
+    background: rgb(4, 6, 20);
+    padding: 40px 40px;
+    margin: 30px 0px;
+    border-radius: 10px;
+}
+
+.ceo-info {
+    margin-left: 150px;
+}
+
+.ceo-image img {
+    width: 330px;
+    height: 550px;
+}
+
+.ceo-info h1 {
+    position: relative;
+    margin-left: 70px;
+}
+
+.ceo-info-text:before {
+    content: " ";
+    background-color: #ffb400;
+    width: 40px;
+    height: 5px;
+    left: -69px;
+    position: absolute;
+    top: 29px;
+    border-radius: 5px;
+}
+
+.ceo-info-text:after {
+    content: "Software Developer";
+    color: white;
+    display: block;
+    font-weight: 600;
+}
+
+p.about-me-short {
+    margin: 20px 20px 10px 0px;
+    text-align: justify;
+}
+
+.custom-btn {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-weight: 600;
+}
+
+.custom-btn-primary {
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 0px 0px 0px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: background linear 0.3s;
+}
+
+.custom-btn-primary:hover {
+    background-color: var(--primary-color);
+}
+
+.custom-right {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    margin-left: 20px;
+}
