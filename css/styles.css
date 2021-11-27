@@ -52,12 +52,28 @@ p {
     font-weight: normal;
 }
 
+.py-120 {
+    padding-top: 120px!important;
+    padding-bottom: 120px!important;
+}
+
 .mt30 {
     margin-top: 95px;
 }
 
 
+/* font-weight */
+
+.custom-font-weight-400 {
+    font-weight: 400;
+}
+
+
 /* color */
+
+.custom-text-white {
+    color: rgb(211, 210, 210);
+}
 
 .text-gray {
     color: gray;
@@ -69,6 +85,10 @@ p {
 
 .custom-text-yellow {
     color: var(--primary-color);
+}
+
+.custom-font-size-14 {
+    font-size: 14px;
 }
 
 .custom-font-size-16 {
@@ -112,7 +132,6 @@ p {
 
 .default-bg {
     background: rgb(17 20 42);
-    background-image: fixed;
     padding: 40px 40px;
     margin: 30px 0px;
     border-radius: 10px;
@@ -165,6 +184,9 @@ p.about-me-short {
     text-align: justify;
 }
 
+
+/* button */
+
 .custom-btn {
     border: none;
     outline: none;
@@ -216,6 +238,23 @@ p.about-me-short {
 
 .custom-btn-primary i {
     margin-left: 20px;
+}
+
+.custom-hire-btn {
+    border: none;
+    outline: none;
+    background: #fff;
+    color: var(--primary-color);
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 15px 35px;
+    text-align: center;
+    transition: all linear 0.3s;
+}
+
+.custom-hire-btn:hover {
+    background: var(--primary-color);
+    color: #000;
 }
 
 
@@ -340,4 +379,63 @@ p.about-me-short {
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+}
+
+
+/* hire */
+
+.custom-hire-btn a {
+    color: var(--primary-color);
+    transition: all linear 0.3s;
+}
+
+.custom-hire-btn:hover a {
+    color: #000;
+}
+
+
+/* contact us */
+
+.email:hover,
+.call:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media-icon {
+    background: rgb(36, 35, 35);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+.social-media-icon a {
+    display: block;
+}
+
+.social-media-icon:hover {
+    background: var(--primary-color);
+}
+
+.custom-input-style {
+    background: #252525;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    width: 100%;
+    outline: 2px solid rgba(0, 0, 0, 0.096);
+    color: #ffffff;
+}
+
+.custom-input-style:focus {
+    background: #252525;
+    outline: 2px solid var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 30px;
+}
+
+input:focus {
+    outline: 2px solid var(--primary-color);
 }
