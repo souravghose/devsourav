@@ -1,5 +1,6 @@
 /* google fonts import */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
 
 /* primary css */
@@ -17,6 +18,7 @@ body {
 
 :root {
     --primary-color: #ffb400;
+    --secondary-color: #fa2e5b;
 }
 
 h1,
@@ -47,6 +49,14 @@ p {
     color: rgb(231, 231, 231);
     font-size: 18px;
     font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+
+/* color */
+
+.text-gray {
+    color: gray;
 }
 
 .custom-rounded-5 {
@@ -54,11 +64,23 @@ p {
 }
 
 .custom-text-yellow {
-    color: #ffb400;
+    color: var(--primary-color);
+}
+
+.custom-font-size-16 {
+    font-size: 16px;
 }
 
 .custom-font-size-20 {
     font-size: 20px;
+}
+
+.custom-font-size-24 {
+    font-size: 1.5em;
+}
+
+.custom-font-size-2 {
+    font-size: 1.7em;
 }
 
 .custom-font-size-50 {
@@ -72,11 +94,26 @@ p {
     align-items: center;
 }
 
+.custom-font-weight-100 {
+    font-weight: 100;
+}
+
+.custom-font-weight-700 {
+    font-weight: 700;
+}
+
+.default-bg {
+    background: rgb(17 20 42);
+    padding: 40px 40px;
+    margin: 30px 0px;
+    border-radius: 10px;
+}
+
 
 /* banner section */
 
 #banner {
-    background: rgb(4, 6, 20);
+    background: rgb(17 20 42);
     padding: 40px 40px;
     margin: 30px 0px;
     border-radius: 10px;
@@ -98,7 +135,7 @@ p {
 
 .ceo-info-text:before {
     content: " ";
-    background-color: #ffb400;
+    background-color: var(--primary-color);
     width: 40px;
     height: 5px;
     left: -69px;
@@ -108,7 +145,7 @@ p {
 }
 
 .ceo-info-text:after {
-    content: "Software Developer";
+    content: "Web Developer";
     color: white;
     display: block;
     font-weight: 600;
@@ -130,11 +167,28 @@ p.about-me-short {
 .custom-btn-primary {
     border: 2px solid var(--primary-color);
     border-radius: 30px;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 23px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     transition: background linear 0.3s;
+}
+
+.custom-btn-dark {
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 20px 20px;
+    text-align: center;
+    transition: background linear 0.3s;
+}
+
+.custom-btn-dark:hover {
+    background-color: var(--primary-color);
+    color: black;
 }
 
 .custom-btn-primary:hover {
@@ -151,6 +205,68 @@ p.about-me-short {
     align-items: center;
 }
 
-i {
+.custom-btn-primary i {
     margin-left: 20px;
+}
+
+
+/* about me section */
+
+.moreAboutMe {
+    border: 2px solid rgba(87, 86, 86, 0.349);
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.moreAboutMe p {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+}
+
+
+/* portfolio */
+
+#projectOne {
+    position: relative;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: all linear 0.5s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#projectOne:hover .overlay {
+    visibility: visible;
+    transform: translateY(0%);
+}
+
+
+/* service section */
+
+.service {
+    background: #000;
+    border-radius: 10px;
+    padding: 40px 20px;
 }
