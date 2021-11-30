@@ -1,0 +1,72 @@
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .ceo-info {
+        margin-left: 27%;
+        margin-top: 50px;
+    }
+    .ceo-image img {
+        width: 70%;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ceo-info h1 {
+        margin-left: 15px;
+    }
+    .custom-font-size-50 {
+        font-size: 1.4em;
+    }
+    .ceo-info-text:before {
+        width: 25px;
+        height: 5px;
+        left: -49px;
+        top: 12px;
+    }
+    p.about-me-short {
+        margin: 10px 60px 10px 0px;
+        text-align: justify;
+        font-size: 16px;
+    }
+}
+
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {}
+
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    .mt50percent {
+        margin-top: 0%;
+    }
+    .mb50percent {
+        margin-bottom: 0%;
+    }
+}
+
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+    .mt50percent {
+        margin-top: 0%;
+    }
+    .mb50percent {
+        margin-bottom: 0%;
+    }
+}
+
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+
+@media (max-width: 1399.98px) {
+    .mt50percent {
+        margin-top: 0%;
+    }
+    .mb50percent {
+        margin-bottom: 0%;
+    }
+}

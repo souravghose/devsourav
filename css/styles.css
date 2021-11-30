@@ -310,6 +310,14 @@ p.about-me-short {
     transform: translateY(0%);
 }
 
+.mt50percent {
+    margin-top: 12%;
+}
+
+.mb50percent {
+    margin-bottom: 13%;
+}
+
 
 /* service section */
 
