@@ -1,6 +1,13 @@
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
+    .popup {
+        position: absolute;
+        height: 30vh;
+        top: 40%;
+        left: 25%;
+        z-index: 1;
+    }
     .ml-neg-20 {
         margin-left: -40px;
     }

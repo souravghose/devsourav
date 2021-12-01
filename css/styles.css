@@ -1,3 +1,19 @@
+.popup {
+    position: absolute;
+    height: 50vh;
+    top: 25%;
+    left: 25%;
+    z-index: 1;
+    visibility: hidden;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
 /* google fonts import */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
