@@ -66,6 +66,23 @@
     .moreAboutMe p {
         font-size: 12px;
     }
+    /* button */
+    .custom-btn-dark {
+        padding: 10px 7px;
+    }
+    /* font size */
+    .custom-font-size-16 {
+        font-size: 15px;
+    }
+    .custom-font-size-24 {
+        font-size: 15px;
+    }
+    /* service section start */
+    .service {
+        background: #000;
+        border-radius: 10px;
+        padding: 20px 10px;
+    }
 }
 
 
