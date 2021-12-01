@@ -5,6 +5,10 @@
 
 /* primary css */
 
+.bg-blue-default {
+    background: rgb(17 20 42);
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: black;
@@ -349,6 +353,13 @@ p.about-me-short {
 
 
 /* my skills section  */
+
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .skill-box-icon {
     border: 2px solid rgba(34, 38, 66, 0.745);
