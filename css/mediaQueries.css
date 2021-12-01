@@ -6,27 +6,65 @@
         margin-top: 50px;
     }
     .ceo-image img {
-        width: 70%;
-        height: 450px;
+        width: 100%;
+        height: 350px;
         margin-left: auto;
         margin-right: auto;
     }
     .ceo-info h1 {
         margin-left: 15px;
     }
-    .custom-font-size-50 {
-        font-size: 1.4em;
+    .main-banner .custom-font-size-50 {
+        font-size: 14px;
+        margin: 0;
     }
     .ceo-info-text:before {
-        width: 25px;
-        height: 5px;
-        left: -49px;
-        top: 12px;
+        width: 15px;
+        height: 3px;
+        left: -30px;
+        top: 10px;
     }
     p.about-me-short {
-        margin: 10px 60px 10px 0px;
+        margin: 10px 0px 10px -20%;
         text-align: justify;
-        font-size: 16px;
+        font-size: 14px;
+    }
+    /* button responsive*/
+    .custom-btn-primary {
+        padding: 0px 0px 0px 15px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: background linear 0.3s;
+        font-size: 13px;
+    }
+    .custom-right {
+        width: 35px;
+        height: 35px;
+        background: var(--primary-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .custom-btn-primary i {
+        margin-left: 20px;
+    }
+    /* heading  */
+    /* ----------- font size ------------ */
+    .custom-font-size-50 {
+        font-size: 26px;
+        text-align: center;
+    }
+    .custom-font-size-2 {
+        font-size: 1.3em;
+    }
+    /* more about me */
+    .moreAboutMe {
+        padding: 15px 3px;
+    }
+    .moreAboutMe p {
+        font-size: 12px;
     }
 }
 
