@@ -474,3 +474,24 @@ p.about-me-short {
 input:focus {
     outline: 2px solid var(--primary-color);
 }
+
+
+/* accordion  faq */
+
+button.accordion-button-custom {
+    color: white;
+    background: none!important;
+    outline: none;
+    border: none;
+}
+
+.accordion-item-custom {
+    background: none;
+    margin-bottom: 30px;
+}
+
+.accordion-header-custom {
+    background: none;
+    color: white;
+    font-size: 1.5em;
+}
