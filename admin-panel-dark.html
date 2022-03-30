@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font-awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <!-- font-awesome  -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+  <!-- chartjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <title>Admin Panel Dark v2.0</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <link rel="stylesheet" href="./admin-panel-dark/css/style.css">
+</head>
+
+<body>
+  <header class="top_header">
+    <nav class="navbar navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+      </button>
+
+
+      <a class="navbar-brand mr-auto" href="#">
+        AdminPanel
+      </a>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <div class="dropdown show">
+              <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="./admin-panel-dark/images/bdflag.png" width="20px" height="20px">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <img src="./admin-panel-dark/images/canadaflag.png" width="20px" height="20px">
+                  <div class="drop-box">
+                    Canada
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <img src="./admin-panel-dark/images/japan-flag-round-icon-16.png" width="20px" height="20px">
+                  <div class="drop-box">
+                    Japanese
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <img src="./admin-panel-dark/images/india-flag-round-icon-16.png" width="20px" height="20px">
+
+                  <div class="drop-box">
+                    Hindi
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="nav-item">
+            <div class="dropdown show">
+              <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-envelope"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="far fa-heart mr-3"></i>
+                  <div class="drop-box">
+                    <b> Jack</b> <br>liked your photo.
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="far fa-share-square mr-3"></i>
+                  <div class="drop-box">Mousumey Ghose <br>shared your post
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="fas fa-tag mr-3"></i>
+                  <div class="drop-box">Mousumey Ghose <br>mentioned you in <br> comment.
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown show">
+              <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-bell"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="far fa-heart mr-3"></i>
+                  <div class="drop-box">
+                    <b> Mousumey Ghose</b> <br>liked your photo.
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="far fa-share-square mr-3"></i>
+                  <div class="drop-box">Mousumey Ghose <br>shared your post
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="fas fa-tag mr-3"></i>
+                  <div class="drop-box">Mousumey Ghose <br>mentioned you in <br> comment.
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="nav-item">
+            <div class="dropdown show">
+              <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="images/sourav.png" width="25px" height="25px">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">
+                  <i class="far fa-user mr-4"></i> Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-inbox mr-4"></i>Inbox
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-lock mr-4"></i> Lock Screen
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-sign-out-alt mr-4"></i> Sign Out
+                </a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Dashboard section start -->
+  <section id="dashboard">
+
+    <nav class="navbar navbar-expand-lg">
+      <button class="bar" type="button">
+        <div class="menu-dashboard"></div>
+        <div class="menu-dashboard"></div>
+        <div class="menu-dashboard"></div>
+      </button>
+
+
+      <div class="page-name">
+        <p><a href="">Dashboard</a> / Sales</p>
+      </div>
+      <div class="dropdown-setting dropdown-s ml-auto">
+        <button id="setting-toggler">
+          <span>Settings</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-chevron-down">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="dropdown-menu-s">
+          <a class="dropdown-item" href="#">Settings</a>
+          <a class="dropdown-item" href="#">Mail</a>
+          <a class="dropdown-item" href="#">Print</a>
+          <a class="dropdown-item" href="#">Download</a>
+          <a class="dropdown-item" href="#">Share</a>
+        </div>
+      </div>
+    </nav>
+    <div class="dashboard-expand">
+      <ul>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-cpu">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>Apps</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-box">
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+              </path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>Components</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-zap">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>Elements</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-target">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>Font Icons</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-airplay">
+              <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+              <polygon points="12 15 17 21 7 21 12 15"></polygon>
+            </svg>Widgets</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-layout">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="9" y1="21" x2="9" y2="9"></line>
+            </svg>Tables</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-layers">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>Datatables</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-layers">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>Forms</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-users">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>Users</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-file">
+              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+              <polyline points="13 2 13 9 20 9"></polyline>
+            </svg>Pages</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-lock">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>Authentication</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-move">
+              <polyline points="5 9 2 12 5 15"></polyline>
+              <polyline points="9 5 12 2 15 5"></polyline>
+              <polyline points="15 19 12 22 9 19"></polyline>
+              <polyline points="19 9 22 12 19 15"></polyline>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <line x1="12" y1="2" x2="12" y2="22"></line>
+            </svg>Drag and Drop</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-map">
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+              <line x1="8" y1="2" x2="8" y2="18"></line>
+              <line x1="16" y1="6" x2="16" y2="22"></line>
+            </svg>Maps</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-pie-chart">
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+              <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+            </svg>Charts</a></li>
+        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-book">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>Documentation</a></li>
+      </ul>
+    </div>
+  </section>
+  <!-- bar chart start -->
+  <section id="sale_report">
+    <div class="row box">
+      <div class="col-sm-12 col-lg-12 col-xl-12">
+        <div class="monthly-report">
+          <h5 class="headline">Income From Sales</h5>
+          <canvas id="myChart" height="130px"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- bar chart end -->
+  <!--pie chart start -->
+  <section id="pie_report">
+    <div class="box row">
+      <div class="col-sm-12 col-lg-6 col-xl-6">
+        <div class="monthly-report">
+          <h5 class="headline">Advertisment Cost</h5>
+          <canvas id="myPie" height="100px"></canvas>
+        </div>
+      </div>
+      <!-- second pie chart start -->
+      <div class="col-sm-12 col-lg-6 col-xl-6">
+        <div class="monthly-report">
+          <h5 class="headline">Others Cost</h5>
+          <canvas id="myPieSecond" height="100px"></canvas>
+        </div>
+      </div>
+      <!-- second pie chart end -->
+      <!-- line chart start -->
+      <div class="col-sm-12 col-lg-12 col-xl-6">
+        <div class="monthly-report">
+          <h5 class="headline">Sales Cost</h5>
+          <canvas id="myLineChart" height="100px"></canvas>
+        </div>
+      </div>
+      <!-- line chart end -->
+      <!-- Doughnut Chart start -->
+       <div class="col-sm-12 col-lg-12 col-xl-6">
+        <div class="monthly-report">
+          <h5 class="headline">Revenue from Promotion</h5>
+          <canvas id="DoughnutChart" height="100px"></canvas>
+        </div>
+      </div>
+      <!-- Doughnut Chart end -->
+    </div>
+  </section>
+  <!-- Dashboard section end -->
+  <!-- Dashboard monthly report start -->
+  <div class="box">
+    <div class="row">
+      <div class="col-sm-12 col-lg-12 col-xl-6">
+        <div class="monthly-report">
+          <h5>Recent Orders</h5>
+          <div class="widget-content">
+            <table>
+              <tr>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Invoice</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td><img src="./admin-panel-dark/images/sourav.png" alt="Profile Picture">Sourav Ghose</td>
+                <td>Laptop</td>
+                <td>60000</td>
+                <td>#5800</td>
+                <td><button class="painding-btn">Pending</button></td>
+              </tr>
+              <tr>
+                <td> <img src="./admin-panel-dark/images/maninstreet.jpg" alt="Profile Picture">John Smith</td>
+                <td>Sunglass</td>
+                <td>200</td>
+                <td>#5600</td>
+                <td><button class="shipped-btn">Shipped</button></td>
+              </tr>
+              <tr>
+                <td> <img src="./admin-panel-dark/images/man-with-glass.jpg" alt="Profile Picture">Saikat Kumar Biswas</td>
+                <td>Headphone</td>
+                <td>400</td>
+                <td>#7800</td>
+                <td><button class="paid-btn">Paid</button></td>
+              </tr>
+              <tr>
+                <td> <img src="./admin-panel-dark/images/maninstreet.jpg" alt="Profile Picture">John Doe</td>
+                <td>Speakers</td>
+                <td>1999</td>
+                <td>#9600</td>
+                <td><button class="shipped-btn">Shipped</button></td>
+              </tr>
+              <tr>
+                <td> <img src="./admin-panel-dark/images/man.jpg" alt="Profile Picture">Smith</td>
+                <td>Watch</td>
+                <td>599</td>
+                <td>#4500</td>
+                <td><button class="painding-btn">Pending</button></td>
+              </tr>
+              <tr>
+                <td> <img src="./admin-panel-dark/images/manintshirts.jpg" alt="Profile Picture"> W. Stephen</td>
+                <td>Shoes</td>
+                <td>2999</td>
+                <td>#2900</td>
+                <td><button class="paid-btn">Paid</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-12 col-xl-6">
+        <div class="monthly-report">
+          <h5>Top Selling Product</h5>
+          <div class="widget-content">
+            <div class="responsive-table">
+              <table>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Discount</th>
+                  <th>Sold</th>
+                  <th>Source</th>
+                </tr>
+                <tr>
+                  <td><img src="./admin-panel-dark/images/laptop.jpg" alt="Laptop"> Laptop</td>
+                  <td>60000</td>
+                  <td>2000</td>
+                  <td>150</td>
+                  <td class="source">Direct</td>
+                </tr>
+                <tr>
+                  <td> <img src="./admin-panel-dark/images/speaker.jpg" alt="Speaker"> Speaker</td>
+                  <td>2000</td>
+                  <td>200</td>
+                  <td>70</td>
+                  <td class="source">Google</td>
+                </tr>
+                <tr>
+                  <td> <img src="./admin-panel-dark/images/headphone.jpg" alt="Headphone"> Headphone</td>
+                  <td>400</td>
+                  <td>100</td>
+                  <td>68</td>
+                  <td class="source">Direct</td>
+                </tr>
+                <tr>
+                  <td> <img src="./admin-panel-dark/images/sunglass.jpg" alt="Sunglass"> Sunglass</td>
+                  <td>200</td>
+                  <td>10</td>
+                  <td>60</td>
+                  <td class="source">Ads</td>
+                </tr>
+                <tr>
+                  <td> <img src="./admin-panel-dark/images/shoes.jpg" alt="Shoes"> Shoes</td>
+                  <td>2999</td>
+                  <td>199</td>
+                  <td>56</td>
+                  <td class="source">Email</td>
+                </tr>
+                <tr>
+                  <td> <img src="./admin-panel-dark/images/watch.jpg" alt="Watch"> Watch</td>
+                  <td>599</td>
+                  <td>60</td>
+                  <td>50</td>
+                  <td class="source">Google</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-xl-12">
+        <div class="monthly-report">
+          <h5>Manage Orders</h5>
+          <div class="widget-content">
+            <div class="responsive-table">
+              <table border="0">
+                <tr>
+                  <th>Customer</th>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Invoice</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td><img src="./admin-panel-dark/images/sourav.png" alt="Profile Picture">Sourav Ghose</td>
+                  <td>Laptop</td>
+                  <td>60000</td>
+                  <td>#5800</td>
+                  <td><button class="painding-btn">Pending</button></td>
+                </tr>
+                <tr>
+                  <td> <img src="./admin-panel-dark/images/maninstreet.jpg" alt="Profile Picture">John Smith</td>
+                  <td>Sunglass</td>
+                  <td>200</td>
+                  <td>#5600</td>
+                  <td><button class="shipped-btn">Shipped</button></td>
+                </tr>
+                <tr>
+                  <td> <img src="./admin-panel-dark/images/man-with-glass.jpg" alt="Profile Picture">Saikat Kumar Biswas</td>
+                  <td>Headphone</td>
+                  <td>400</td>
+                  <td>#7800</td>
+                  <td><button class="paid-btn">Paid</button></td>
+                </tr>
+                <tr>
+                  <td> <img src="./admin-panel-dark/images/maninstreet.jpg" alt="Profile Picture">John Doe</td>
+                  <td>Speakers</td>
+                  <td>1999</td>
+                  <td>#9600</td>
+                  <td><button class="shipped-btn">Shipped</button></td>
+                </tr>
+                <tr>
+                  <td> <img src="./admin-panel-dark/images/man.jpg" alt="Profile Picture">Smith</td>
+                  <td>Watch</td>
+                  <td>599</td>
+                  <td>#4500</td>
+                  <td><button class="painding-btn">Pending</button></td>
+                </tr>
+                <tr>
+                  <td> <img src="./admin-panel-dark/images/manintshirts.jpg" alt="Profile Picture">W. Stephen</td>
+                  <td>Shoes</td>
+                  <td>2999</td>
+                  <td>#2900</td>
+                  <td><button class="paid-btn">Paid</button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-6 col-xl-5">
+        <div class="monthly-report">
+          <h5>Transactions</h5>
+          <div class="transaction-widget d-block m-auto">
+            <div class="transaction-content d-flex">
+              <div class="tr-content">
+                <span><i class="fas fa-home h-icon"></i></span>
+                <span class="transaction-name">Electricity Bill</span>
+                <span class="date">
+                  <p>14 November 2020</p>
+                </span>
+              </div>
+              <div>
+                <span class="transaction-value money-down">-3400</span>
+              </div>
+            </div>
+
+            <div class="transaction-content d-flex">
+              <div class="tr-content">
+                <span><i class="fas fa-home h-icon"></i></span>
+                <span class="transaction-name">Internet Bill</span>
+                <span class="date">
+                  <p>23 November 2021</p>
+                </span>
+              </div>
+              <div>
+                <span class="transaction-value money-down">-2000</span>
+              </div>
+            </div>
+
+            <div class="transaction-content d-flex">
+              <div class="tr-content">
+                <span><i class="fas fa-home h-icon"></i></span>
+                <span class="transaction-name">Netflix</span>
+                <span class="date">
+                  <p>16 November 2021</p>
+                </span>
+              </div>
+              <div>
+                <span class="transaction-value money-down">-3000</span>
+              </div>
+            </div>
+            <div class="transaction-content d-flex">
+              <div class="tr-content">
+                <span><i class="fas fa-home h-icon"></i></span>
+                <span class="transaction-name">Selling Computer</span>
+                <span class="date">
+                  <p>23 November 2020</p>
+                </span>
+              </div>
+              <div>
+                <span class="transaction-value money-up">+60000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-6 col-xl-3">
+        <div class="monthly-report">
+          <h5>Recent Activities</h5>
+          <div class="activity-content">
+            <ul>
+              <li>Updated Server Logs</li>
+              <li>Send mail to Marketing and <a href="#">Admin</a></li>
+              <li>Backup Files EOD</li>
+              <li>Conference Call with <a href="">Manager</a></li>
+              <li>Send contract details to Freelancer</li>
+              <li>Updated Server Logs</li>
+              <li>Send mail to Accounting and <a href="#">Admin</a></li>
+              <li>Backup Files EOD</li>
+            </ul>
+            <div class="view-btn">
+              <button class="view-all-btn"> View All&nbsp; <i class="fas fa-chevron-down f-12"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-12 col-xl-4">
+        <div class="monthly-report">
+          <h5>Account Info</h5>
+          <div class="account-widget">
+            <h3 class="text-center">Balance</h3>
+            <h4 class="text-center">$2500</h4>
+            <div class="dash-line"></div>
+            <div class="account-info-content">
+              <div class="account-info">
+                <h5>Monthly Plan</h5>
+                <p>$ 199.0</p>
+              </div>
+              <div class="account-info">
+                <h5>Taxes</h5>
+                <p>$ 17.82</p>
+              </div>
+              <div class="account-info">
+                <h5>Extras this month</h5>
+                <p>$ -0.68</p>
+              </div>
+              <div class="account-info">
+                <div class="check-balance-btn">Check Balance</div>
+                <div class="purchase-plan-btn">Purchase Plan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer start -->
+  <div class="footer-widget">
+    <p>Copyright &copy;2020 By <a href="#">Sourav Ghose</a>. All Rights Reseved </p>
+  </div>
+  <!-- external js -->
+  <script src="js/app.js"></script>
+  <!-- Google Chart js -->
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <!-- chart js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="./admin-panel-dark/js/app.js"></script>
+  <script src="./admin-panel-dark/js/chart.js"></script>
+</body>
+
+</html>
